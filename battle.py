@@ -78,7 +78,7 @@ while True:
     time.sleep(2)  # Pause for 2 seconds
 
     # Calculate the difference in stats between players
-    difference = (player_one_stats - player_two_stats) + 1
+    difference = abs(player_one_stats - player_two_stats) + 1
 
     # Roll dice for both players
     player_one_dice = roll_dice(6)
